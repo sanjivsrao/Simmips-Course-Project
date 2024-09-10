@@ -1,0 +1,9 @@
+# preserve line endings on test files
+tests/pass/unix/*.asm text eol=lf
+tests/pass/win/*.asm text eol=crlf
+tests/fail/unix/*.asm text eol=lf
+tests/fail/win/*.asm text eol=crlf
+
+# preserve line ending on bash script
+scripts/coverage.sh eol=lf
+scripts/integration_test.py eol=lf
